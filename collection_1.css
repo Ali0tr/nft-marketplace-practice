@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+    margin-top: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header a {
+    position: absolute;
+    left: 15px;
+    top: 30%;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.3s;
+}
+header a:hover{
+    transform: scale(1.5);
+    color: #000;
+}
+
+header a i {
+    font-size: 20px;
+}
+
+main .figure,
+main .description,
+main>a,
+header {
+    width: 95%;
+    max-width: 660px;
+}
+
+main .figure figcaption {
+    width: 100%;
+    margin-top: 20px;
+}
+
+main .figure figcaption.detail {
+    font-size: 18px;
+}
+
+main .figure figcaption.detail .right .caption {
+    font-size: 14px;
+    text-align: end;
+}
+
+main .figure img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+main .figure figcaption.time p {
+    border: 1px solid #c2c2c2;
+    width: 40px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+main>a {
+    background-color: darkgreen;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+main > a:hover{
+    color: #fff;
+}

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #FFB4A2;
+    margin: 0;
+    gap: 10px;
+}
+
+.header>img {
+    max-width: 170px;
+    max-height: 170px;
+    width: 50%;
+    min-width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header .caption h3 {
+    font-size: min(1.5rem, 5vw);
+    margin: 0;
+}
+
+.header .caption p {
+    font-size: min(14px, 4vw);
+}
+
+.header .social {
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    max-width: 170px;
+    width: 50%;
+    height: 40px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header .social:hover{
+    transform: scale(1.03);
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 40px;
+    background-color: #fff;
+    opacity: 20%;
+}
+
+.header .social i {
+    font-size: min(20px, 5vw);
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.cards .card {
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.cards .card:hover{
+    transform: scale(1.03);
+}
+.cards .card img {
+    width: 100%;
+    aspect-ratio: 2 / 1.5;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards .card .about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    margin: 10px;
+}
+
+.cards .card .share {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    height: 70%;
+    width: 40px;
+    top: 15%;
+    cursor: pointer;
+}
+
+.card .share .share-container i{
+    font-size: 20px;
+}
+
+.cards .card .about h3 {
+    font-size: 1.5rem;
+}
+
+.cards .card .about p {
+    font-size: 14px;
+}
+
+.card--2 .share,
+.card--2 .about {
+    color: #000 !important;
+}
